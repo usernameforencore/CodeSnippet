@@ -1,0 +1,34 @@
+ # Host down
+        sn_inc_endpoint = sn_inc_endpoint + '^descriptionLIKEnot%20responding%20to%20Ping'
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKESystem%20Up%20Time'
+        sn_inc_endpoint = sn_inc_endpoint + '^ORshort_descriptionLIKEPing%20device%20Availability'
+        #Windows CPU Utilization
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEcpu%20utilization%20on'
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEcpu%20utilizationon'
+        # Memory Utilization
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEmemory%20usage%20on'
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEmemory%20used%20on'
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEmemory%20usedon'
+        # Windows Disk usage
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKElogical%20disk%20free%20space%20on'
+        # Unix Process Alert
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEPATROL%20Agent'
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKE%20MONITORING%20%20Disk'
+        # Windows CPU Performance Queue length
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKESystem%20Performance%20Processor%20Queue%20Length'
+        # Linux Process
+        sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKELinux%20process'
+        # Windows Hearbeat
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEOpsRamp%20Agent%20service%20is%20offline'
+        # Windows Service alert
+        sn_inc_endpoint = sn_inc_endpoint + '^ORshort_descriptionLIKEWindows%20Service'
+        # Network resouce healthcheck
+        sn_inc_endpoint = sn_inc_endpoint + '^ORshort_descriptionLIKEResourcesHealthAlert'
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORshort_descriptionLIKEService%20Alert:'
+        # Network Unreachable to ping
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKENetwork%20Outage'
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEDevice%20Reboot%20Detected'
+        # SNMP Agent Not Responding
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKESNMP%20Agent%20Not%20Responding'
+        #Wireless accesspoint alarm
+        #sn_inc_endpoint = sn_inc_endpoint + '^ORdescriptionLIKEAP%20Antenna%20Offline'
