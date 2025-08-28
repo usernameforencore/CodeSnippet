@@ -1,0 +1,645 @@
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 key get winrm.username
++------------------+-------------------------+
+| Property         | Value                   |
++------------------+-------------------------+
+| name             | winrm.username          |
+| value            | Clarios\ap_svc_dsolclsa |
+| secret           | False                   |
+| encrypted        | False                   |
+| scope            | st2kv.system            |
+| expire_timestamp |                         |
++------------------+-------------------------+
+[xbhanapdsa@c1040l0065n actions]$  Clarios\ap_svc_dsolcls | False  | False     | st2kv.system |      |                  |
+-bash: syntax error near unexpected token `|'
+[xbhanapdsa@c1040l0065n actions]$ |                        | a Clarios\ap_svc_dsolcls | False  | False     | st2kv.system |      |                  |
+-bash: syntax error near unexpected token `|'
+[xbhanapdsa@c1040l0065n actions]$ |                        | aclea^C
+[xbhanapdsa@c1040l0065n actions]$ clear
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 key list -n 1000
++------------------------+------------------------+--------+-----------+--------------+------+------------------+
+| name                   | value                  | secret | encrypted | scope        | user | expire_timestamp |
++------------------------+------------------------+--------+-----------+--------------+------+------------------+
+| Win_Memory_max_failure | 3                      | False  | False     | st2kv.system |      |                  |
+| s                      |                        |        |           |              |      |                  |
+| Win_Memory_max_success | 2                      | False  | False     | st2kv.system |      |                  |
+| es                     |                        |        |           |              |      |                  |
+| Win_Memory_pending_min | 10                     | False  | False     | st2kv.system |      |                  |
+| s                      |                        |        |           |              |      |                  |
+| Win_Memory_recheck_lim | 8                      | False  | False     | st2kv.system |      |                  |
+| it                     |                        |        |           |              |      |                  |
+| Win_Memory_sleep_inter | 300                    | False  | False     | st2kv.system |      |                  |
+| val                    |                        |        |           |              |      |                  |
+| Win_ServiceCheck_Rec_l | {'7' : 15,'30' : 30 }  | False  | False     | st2kv.system |      |                  |
+| ogic_days              |                        |        |           |              |      |                  |
+| Win_cpu_Rec_logic_days | {'7' : 15,'30' : 30 }  | False  | False     | st2kv.system |      |                  |
+| Win_cpu_max_failures   | 4                      | False  | False     | st2kv.system |      |                  |
+| Win_cpu_max_successes  | 2                      | False  | False     | st2kv.system |      |                  |
+| Win_cpu_pending_mins   | 10                     | False  | False     | st2kv.system |      |                  |
+| Win_cpu_recheck_limit  | 8                      | False  | False     | st2kv.system |      |                  |
+| Win_disk_Rec_logic_day | {'7' : 3}              | False  | False     | st2kv.system |      |                  |
+| s                      |                        |        |           |              |      |                  |
+| Win_hostdown_Rec_logic | {'1' : 6,'11' :11 ,    | False  | False     | st2kv.system |      |                  |
+| _days                  | '30' : 21}             |        |           |              |      |                  |
+| Win_memory_Rec_logic_d | {'7' : 15,'30' : 30 }  | False  | False     | st2kv.system |      |                  |
+| ays                    |                        |        |           |              |      |                  |
+| Win_mnt_hb_failure_Rec | {"30": 45}             | False  | False     | st2kv.system |      |                  |
+| _logic_days            |                        |        |           |              |      |                  |
+| Win_mnt_hb_failure_pri | False                  | False  | False     | st2kv.system |      |                  |
+| ority_upgrade          |                        |        |           |              |      |                  |
+| abc                    | 123                    | False  | False     | st2kv.system |      |                  |
+| automox_apikey         | e0528c55-2625-41d1-b0c | False  | False     | st2kv.system |      |                  |
+|                        | a-8fdcacf7b819         |        |           |              |      |                  |
+| automox_password       | 303030303000E64D85E6ED | True   | True      | st2kv.system |      |                  |
+|                        | 91861348709C52CCD7076A |        |           |              |      |                  |
+|                        | CD896086053FF73AE52C72 |        |           |              |      |                  |
+|                        | D8929BCF295EDAF48DC4E3 |        |           |              |      |                  |
+|                        | 4C417A442FFBE11E6538C8 |        |           |              |      |                  |
+|                        | 46B776F3C818EE4FAFF6B6 |        |           |              |      |                  |
+|                        | F8B1BA551A5CC1         |        |           |              |      |                  |
+| automox_username       | unix.automation.mailbo | False  | False     | st2kv.system |      |                  |
+|                        | x@nttdata.com          |        |           |              |      |                  |
+| bolt.retry_count       | 3                      | False  | False     | st2kv.system |      |                  |
+| bolt.retry_delay       | 60                     | False  | False     | st2kv.system |      |                  |
+| bolt.timeout           | 900                    | False  | False     | st2kv.system |      |                  |
+| bolt.timeout_offset    | 60                     | False  | False     | st2kv.system |      |                  |
+| clarios_switch.automat | 3030303030D40B32ACADB0 | True   | True      | st2kv.system |      |                  |
+| ion_password           | C7C9FCF483A9FAC9B27C90 |        |           |              |      |                  |
+|                        | EEE19968E781079CBFDA25 |        |           |              |      |                  |
+|                        | 9E003617525F14386AC33E |        |           |              |      |                  |
+|                        | F4D6A4F1260ABB55B4457F |        |           |              |      |                  |
+|                        | 574D                   |        |           |              |      |                  |
+| cma_password           | 303030303078F1C2FBBF6D | True   | True      | st2kv.system |      |                  |
+|                        | F914F4D2C4E1037D71E527 |        |           |              |      |                  |
+|                        | BCDA8BAC44ED287763EB2E |        |           |              |      |                  |
+|                        | 9C5E7526673CB55364CF87 |        |           |              |      |                  |
+|                        | 87946D4DA399A42F0CA6F0 |        |           |              |      |                  |
+|                        | 1124                   |        |           |              |      |                  |
+| cma_username           | cmaadmin               | False  | False     | st2kv.system |      |                  |
+| consecutive_fails      | {"INC1": 1,            | False  | False     | st2kv.system |      |                  |
+|                        | "INC14962763": 1}      |        |           |              |      |                  |
+| consecutive_success    | {"INC1": 1,            | False  | False     | st2kv.system |      |                  |
+|                        | "INC14962763": 1}      |        |           |              |      |                  |
+| cpu.top_process_limit  | 10                     | False  | False     | st2kv.system |      |                  |
+| database.HC.AuditLog_p | spAutomatedHealthCheck | False  | False     | st2kv.system |      |                  |
+| rocedure               | AuditLog_Add           |        |           |              |      |                  |
+| database.HC.Metric_pro | spAutomatedHealthCheck | False  | False     | st2kv.system |      |                  |
+| cedure                 | Metric_Add             |        |           |              |      |                  |
+| database.HC.database_n | Automated Health Check | False  | False     | st2kv.system |      |                  |
+| ame                    |                        |        |           |              |      |                  |
+| database.HC.drivername | mssql                  | False  | False     | st2kv.system |      |                  |
+| database.HC.host       | 10.4.12.122            | False  | False     | st2kv.system |      |                  |
+| database.HC.password   | 3030303030008AC28A0AEA | True   | True      | st2kv.system |      |                  |
+|                        | 39D880A259117065C89EF2 |        |           |              |      |                  |
+|                        | 9F1421656ECA93C5619969 |        |           |              |      |                  |
+|                        | 07FBCBF0BB46521B8459E2 |        |           |              |      |                  |
+|                        | C74A0357D12617A39D3D7E |        |           |              |      |                  |
+|                        | 7D75084BB18C9323202737 |        |           |              |      |                  |
+|                        | FF894DC7E0524F         |        |           |              |      |                  |
+| database.HC.username   | Health_Check_Metrics   | False  | False     | st2kv.system |      |                  |
+| database.database_name | BAO_Metrics            | False  | False     | st2kv.system |      |                  |
+| database.drivername    | mssql                  | False  | False     | st2kv.system |      |                  |
+| database.host          | 10.4.13.14             | False  | False     | st2kv.system |      |                  |
+| database.metric_detail | insertIntoMetricsDetai | False  | False     | st2kv.system |      |                  |
+| _procedure             | lTable                 |        |           |              |      |                  |
+| database.metric_detail | METRIC_DETAIL          | False  | False     | st2kv.system |      |                  |
+| _table                 |                        |        |           |              |      |                  |
+| database.metric_proced | insertIntoMetricsTable | False  | False     | st2kv.system |      |                  |
+| ure                    |                        |        |           |              |      |                  |
+| database.metric_table  | METRIC                 | False  | False     | st2kv.system |      |                  |
+| database.password      | 3030303030451AAB5143C3 | True   | True      | st2kv.system |      |                  |
+|                        | BAFE2431F6519796B7609B |        |           |              |      |                  |
+|                        | 136AB385FE47A7A2B69CCA |        |           |              |      |                  |
+|                        | DA9864B2140B5EE4803E67 |        |           |              |      |                  |
+|                        | 05613F4EF446D58C848B77 |        |           |              |      |                  |
+|                        | 9B02                   |        |           |              |      |                  |
+| database.process_proce | insertIntoAM_Process_T | False  | False     | st2kv.system |      |                  |
+| dure                   | able                   |        |           |              |      |                  |
+| database.process_table | tbl_AM_Process_Data    | False  | False     | st2kv.system |      |                  |
+| database.username      | BMCAuto                | False  | False     | st2kv.system |      |                  |
+| disk.bolt_timeout      | 2000                   | False  | False     | st2kv.system |      |                  |
+| disk.clean_profile_age | 30                     | False  | False     | st2kv.system |      |                  |
+| disk.cleanmgr_tasks    | true                   | False  | False     | st2kv.system |      |                  |
+| disk.compress_file_age | 30                     | False  | False     | st2kv.system |      |                  |
+| disk.compress_files    | false                  | False  | False     | st2kv.system |      |                  |
+| disk.compress_min_size | 100                    | False  | False     | st2kv.system |      |                  |
+| disk.remove_profile    | false                  | False  | False     | st2kv.system |      |                  |
+| disk.remove_tmp_ie_fil | false                  | False  | False     | st2kv.system |      |                  |
+| es                     |                        |        |           |              |      |                  |
+| disk.threshold_type    | percent                | False  | False     | st2kv.system |      |                  |
+| disk_clean.valid_os_ve | ["server2003",         | False  | False     | st2kv.system |      |                  |
+| rsions                 | "server2008",          |        |           |              |      |                  |
+|                        | "server2012", "server2 |        |           |              |      |                  |
+|                        | 016","server2019"]     |        |           |              |      |                  |
+| linux.password         | 3030303030E5F910EB0A04 | True   | True      | st2kv.system |      |                  |
+|                        | B2497EB5490C4415FAFC57 |        |           |              |      |                  |
+|                        | 1DC97C74093795D49DAF5C |        |           |              |      |                  |
+|                        | 3CB3586FD02CCAAE31F75A |        |           |              |      |                  |
+|                        | E19E82A739B78673C1D2F1 |        |           |              |      |                  |
+|                        | 8775                   |        |           |              |      |                  |
+| linux.run_as_user      | root                   | False  | False     | st2kv.system |      |                  |
+| linux.tmpdir           | /tmp                   | False  | False     | st2kv.system |      |                  |
+| linux.username         | ap_svc_dsopupadm       | False  | False     | st2kv.system |      |                  |
+| local_server_ip        | 10.75.9.167            | False  | False     | st2kv.system |      |                  |
+| local_server_pass      | 303030303096738941D930 | True   | True      | st2kv.system |      |                  |
+|                        | AFBE3D1C3717EC5E7F3C69 |        |           |              |      |                  |
+|                        | 94C32B25FA31A290F2CFFF |        |           |              |      |                  |
+|                        | 07614BA64E2E734D11B4F0 |        |           |              |      |                  |
+|                        | E5F9A40C24AF544C92A992 |        |           |              |      |                  |
+|                        | 3EB9                   |        |           |              |      |                  |
+| local_server_pass_key  | 30303030303B4F6E0EFF3F | True   | True      | st2kv.system |      |                  |
+|                        | 57E31BB4734699AEABECCF |        |           |              |      |                  |
+|                        | 6DEE9C146DDDB81B492CB8 |        |           |              |      |                  |
+|                        | B9EAB9D880B76CEC43B2BC |        |           |              |      |                  |
+|                        | EE117D031BD4FEB761FFC6 |        |           |              |      |                  |
+|                        | 1ED37E08209818A53CC99B |        |           |              |      |                  |
+|                        | 477B31A9D3AD4A         |        |           |              |      |                  |
+| local_server_user      | xbhanapdSA             | False  | False     | st2kv.system |      |                  |
+| max_failures           | 3                      | False  | False     | st2kv.system |      |                  |
+| memory.status          | 3                      | False  | False     | st2kv.system |      |                  |
+| networkresource_client | ffa84801-c919-4247-a15 | False  | False     | st2kv.system |      |                  |
+| id                     | c-bc121ebc892d         |        |           |              |      |                  |
+| networkresource_client | iRE8Q~tEGStHAPLdl6ZIzb | False  | False     | st2kv.system |      |                  |
+| secret                 | bXnza1Tcr53ZMORbTe     |        |           |              |      |                  |
+| networkresource_tenant | 74b72ba8-5684-402c-98d | False  | False     | st2kv.system |      |                  |
+| id                     | a-e38799398d7d         |        |           |              |      |                  |
+| ping_count             | 5                      | False  | False     | st2kv.system |      |                  |
+| rapid7_password        | 3030303030E20630B8B8F4 | True   | True      | st2kv.system |      |                  |
+|                        | A6ADD82218E465518A4FED |        |           |              |      |                  |
+|                        | 8C0145F2B96F3B6CA25E5F |        |           |              |      |                  |
+|                        | 8D801198AA63D4F98BEB07 |        |           |              |      |                  |
+|                        | 2E7505B2FA42EB7A98FE5A |        |           |              |      |                  |
+|                        | B71E                   |        |           |              |      |                  |
+| rapid7_username        | S1000331               | False  | False     | st2kv.system |      |                  |
+| recheck_limit          | 5                      | False  | False     | st2kv.system |      |                  |
+| recheck_total          | {"INC1": 1,            | False  | False     | st2kv.system |      |                  |
+|                        | "INC14962763": 1}      |        |           |              |      |                  |
+| remove_tmp_files       | true                   | False  | False     | st2kv.system |      |                  |
+| servicenow.Pending_inc | []                     | False  | False     | st2kv.system |      |                  |
+| idents_processing      |                        |        |           |              |      |                  |
+| servicenow.Pending_tas | []                     | False  | False     | st2kv.system |      |                  |
+| ks_processing          |                        |        |           |              |      |                  |
+| servicenow.change_requ | []                     | False  | False     | st2kv.system |      |                  |
+| ests_processing        |                        |        |           |              |      |                  |
+| servicenow.change_requ | ['CHG0733715',         | False  | False     | st2kv.system |      |                  |
+| ests_processing_to_clo | 'CHG0733716']          |        |           |              |      |                  |
+| se                     |                        |        |           |              |      |                  |
+| servicenow.incidents_p | ['INC17504809',        | False  | False     | st2kv.system |      |                  |
+| rocessing              | 'INC17504808',         |        |           |              |      |                  |
+|                        | 'INC17504810',         |        |           |              |      |                  |
+|                        | 'INC17504811',         |        |           |              |      |                  |
+|                        | 'INC17504812',         |        |           |              |      |                  |
+|                        | 'INC17504813',         |        |           |              |      |                  |
+|                        | 'INC17504898',         |        |           |              |      |                  |
+|                        | 'INC17504901',         |        |           |              |      |                  |
+|                        | 'INC17504904',         |        |           |              |      |                  |
+|                        | 'INC17504905',         |        |           |              |      |                  |
+|                        | 'INC17504906',         |        |           |              |      |                  |
+|                        | 'INC17504907',         |        |           |              |      |                  |
+|                        | 'INC17505294',         |        |           |              |      |                  |
+|                        | 'INC17505296',         |        |           |              |      |                  |
+|                        | 'INC17508524',         |        |           |              |      |                  |
+|                        | 'INC17508525',         |        |           |              |      |                  |
+|                        | 'INC17508529',         |        |           |              |      |                  |
+|                        | 'INC17508532',         |        |           |              |      |                  |
+|                        | 'INC17511324',         |        |           |              |      |                  |
+|                        | 'INC17511443',         |        |           |              |      |                  |
+|                        | 'INC17511470',         |        |           |              |      |                  |
+|                        | 'INC17511473',         |        |           |              |      |                  |
+|                        | 'INC17511546',         |        |           |              |      |                  |
+|                        | 'INC17511710',         |        |           |              |      |                  |
+|                        | 'INC17511712',         |        |           |              |      |                  |
+|                        | 'INC17511855',         |        |           |              |      |                  |
+|                        | 'INC17511911',         |        |           |              |      |                  |
+|                        | 'INC17511915',         |        |           |              |      |                  |
+|                        | 'INC17511919',         |        |           |              |      |                  |
+|                        | 'INC17511921',         |        |           |              |      |                  |
+|                        | 'INC17511924',         |        |           |              |      |                  |
+|                        | 'INC17511929',         |        |           |              |      |                  |
+|                        | 'INC17511937',         |        |           |              |      |                  |
+|                        | 'INC17511961',         |        |           |              |      |                  |
+|                        | 'INC17511960',         |        |           |              |      |                  |
+|                        | 'INC17511975',         |        |           |              |      |                  |
+|                        | 'INC17512067',         |        |           |              |      |                  |
+|                        | 'INC17512069',         |        |           |              |      |                  |
+|                        | 'INC17512116',         |        |           |              |      |                  |
+|                        | 'INC17514770',         |        |           |              |      |                  |
+|                        | 'INC17514895',         |        |           |              |      |                  |
+|                        | 'INC17514898',         |        |           |              |      |                  |
+|                        | 'INC17514906',         |        |           |              |      |                  |
+|                        | 'INC17514917',         |        |           |              |      |                  |
+|                        | 'INC17514905',         |        |           |              |      |                  |
+|                        | 'INC17514896',         |        |           |              |      |                  |
+|                        | 'INC17514899',         |        |           |              |      |                  |
+|                        | 'INC17514900',         |        |           |              |      |                  |
+|                        | 'INC17514909',         |        |           |              |      |                  |
+|                        | 'INC17514912',         |        |           |              |      |                  |
+|                        | 'INC17514911',         |        |           |              |      |                  |
+|                        | 'INC17514902',         |        |           |              |      |                  |
+|                        | 'INC17514910',         |        |           |              |      |                  |
+|                        | 'INC17514908',         |        |           |              |      |                  |
+|                        | 'INC17514907',         |        |           |              |      |                  |
+|                        | 'INC17514913',         |        |           |              |      |                  |
+|                        | 'INC17514916',         |        |           |              |      |                  |
+|                        | 'INC17514903',         |        |           |              |      |                  |
+|                        | 'INC17514901',         |        |           |              |      |                  |
+|                        | 'INC17514928',         |        |           |              |      |                  |
+|                        | 'INC17514926',         |        |           |              |      |                  |
+|                        | 'INC17514925',         |        |           |              |      |                  |
+|                        | 'INC17514927',         |        |           |              |      |                  |
+|                        | 'INC17514929',         |        |           |              |      |                  |
+|                        | 'INC17514931',         |        |           |              |      |                  |
+|                        | 'INC17514943',         |        |           |              |      |                  |
+|                        | 'INC17515011',         |        |           |              |      |                  |
+|                        | 'INC17515033',         |        |           |              |      |                  |
+|                        | 'INC17515134',         |        |           |              |      |                  |
+|                        | 'INC17515222',         |        |           |              |      |                  |
+|                        | 'INC17515446',         |        |           |              |      |                  |
+|                        | 'INC17515451',         |        |           |              |      |                  |
+|                        | 'INC17515456',         |        |           |              |      |                  |
+|                        | 'INC17515599',         |        |           |              |      |                  |
+|                        | 'INC17515628',         |        |           |              |      |                  |
+|                        | 'INC17515629',         |        |           |              |      |                  |
+|                        | 'INC17515656',         |        |           |              |      |                  |
+|                        | 'INC17515736',         |        |           |              |      |                  |
+|                        | 'INC17515737',         |        |           |              |      |                  |
+|                        | 'INC17515738',         |        |           |              |      |                  |
+|                        | 'INC17515739',         |        |           |              |      |                  |
+|                        | 'INC17515754',         |        |           |              |      |                  |
+|                        | 'INC17515758',         |        |           |              |      |                  |
+|                        | 'INC17515759',         |        |           |              |      |                  |
+|                        | 'INC17515774',         |        |           |              |      |                  |
+|                        | 'INC17515775',         |        |           |              |      |                  |
+|                        | 'INC17515776',         |        |           |              |      |                  |
+|                        | 'INC17515778',         |        |           |              |      |                  |
+|                        | 'INC17515779',         |        |           |              |      |                  |
+|                        | 'INC17515780',         |        |           |              |      |                  |
+|                        | 'INC17515781',         |        |           |              |      |                  |
+|                        | 'INC17515782',         |        |           |              |      |                  |
+|                        | 'INC17515783',         |        |           |              |      |                  |
+|                        | 'INC17515784',         |        |           |              |      |                  |
+|                        | 'INC17515785',         |        |           |              |      |                  |
+|                        | 'INC17515787',         |        |           |              |      |                  |
+|                        | 'INC17515788',         |        |           |              |      |                  |
+|                        | 'INC17515789',         |        |           |              |      |                  |
+|                        | 'INC17515790',         |        |           |              |      |                  |
+|                        | 'INC17515792',         |        |           |              |      |                  |
+|                        | 'INC17515794',         |        |           |              |      |                  |
+|                        | 'INC17515796',         |        |           |              |      |                  |
+|                        | 'INC17515797',         |        |           |              |      |                  |
+|                        | 'INC17515799',         |        |           |              |      |                  |
+|                        | 'INC17515800',         |        |           |              |      |                  |
+|                        | 'INC17515801',         |        |           |              |      |                  |
+|                        | 'INC17515802',         |        |           |              |      |                  |
+|                        | 'INC17515803',         |        |           |              |      |                  |
+|                        | 'INC17515808',         |        |           |              |      |                  |
+|                        | 'INC17515809',         |        |           |              |      |                  |
+|                        | 'INC17515810',         |        |           |              |      |                  |
+|                        | 'INC17515812',         |        |           |              |      |                  |
+|                        | 'INC17515814',         |        |           |              |      |                  |
+|                        | 'INC17515815',         |        |           |              |      |                  |
+|                        | 'INC17515818',         |        |           |              |      |                  |
+|                        | 'INC17515819',         |        |           |              |      |                  |
+|                        | 'INC17515821',         |        |           |              |      |                  |
+|                        | 'INC17515829',         |        |           |              |      |                  |
+|                        | 'INC17515830',         |        |           |              |      |                  |
+|                        | 'INC17515835',         |        |           |              |      |                  |
+|                        | 'INC17515842',         |        |           |              |      |                  |
+|                        | 'INC17515928',         |        |           |              |      |                  |
+|                        | 'INC17515931',         |        |           |              |      |                  |
+|                        | 'INC17515939',         |        |           |              |      |                  |
+|                        | 'INC17515955',         |        |           |              |      |                  |
+|                        | 'INC17515992',         |        |           |              |      |                  |
+|                        | 'INC17515996',         |        |           |              |      |                  |
+|                        | 'INC17515997',         |        |           |              |      |                  |
+|                        | 'INC17515999',         |        |           |              |      |                  |
+|                        | 'INC17516000',         |        |           |              |      |                  |
+|                        | 'INC17516006',         |        |           |              |      |                  |
+|                        | 'INC17516211',         |        |           |              |      |                  |
+|                        | 'INC17516446',         |        |           |              |      |                  |
+|                        | 'INC17516454',         |        |           |              |      |                  |
+|                        | 'INC17516458',         |        |           |              |      |                  |
+|                        | 'INC17516474',         |        |           |              |      |                  |
+|                        | 'INC17516509',         |        |           |              |      |                  |
+|                        | 'INC17516637',         |        |           |              |      |                  |
+|                        | 'INC17516639',         |        |           |              |      |                  |
+|                        | 'INC17516640',         |        |           |              |      |                  |
+|                        | 'INC17516648',         |        |           |              |      |                  |
+|                        | 'INC17516700',         |        |           |              |      |                  |
+|                        | 'INC17516858',         |        |           |              |      |                  |
+|                        | 'INC17516998',         |        |           |              |      |                  |
+|                        | 'INC17516999',         |        |           |              |      |                  |
+|                        | 'INC17517057',         |        |           |              |      |                  |
+|                        | 'INC17517058',         |        |           |              |      |                  |
+|                        | 'INC17517059',         |        |           |              |      |                  |
+|                        | 'INC17517060',         |        |           |              |      |                  |
+|                        | 'INC17517061',         |        |           |              |      |                  |
+|                        | 'INC17517062',         |        |           |              |      |                  |
+|                        | 'INC17517063',         |        |           |              |      |                  |
+|                        | 'INC17517064',         |        |           |              |      |                  |
+|                        | 'INC17517065',         |        |           |              |      |                  |
+|                        | 'INC17517067',         |        |           |              |      |                  |
+|                        | 'INC17517068',         |        |           |              |      |                  |
+|                        | 'INC17517069',         |        |           |              |      |                  |
+|                        | 'INC17517070',         |        |           |              |      |                  |
+|                        | 'INC17517071',         |        |           |              |      |                  |
+|                        | 'INC17517073',         |        |           |              |      |                  |
+|                        | 'INC17517074',         |        |           |              |      |                  |
+|                        | 'INC17517075',         |        |           |              |      |                  |
+|                        | 'INC17517076',         |        |           |              |      |                  |
+|                        | 'INC17517077',         |        |           |              |      |                  |
+|                        | 'INC17517079',         |        |           |              |      |                  |
+|                        | 'INC17517081',         |        |           |              |      |                  |
+|                        | 'INC17517083',         |        |           |              |      |                  |
+|                        | 'INC17517084',         |        |           |              |      |                  |
+|                        | 'INC17517085',         |        |           |              |      |                  |
+|                        | 'INC17517086',         |        |           |              |      |                  |
+|                        | 'INC17517087',         |        |           |              |      |                  |
+|                        | 'INC17517103',         |        |           |              |      |                  |
+|                        | 'INC17517110',         |        |           |              |      |                  |
+|                        | 'INC17517112',         |        |           |              |      |                  |
+|                        | 'INC17517115',         |        |           |              |      |                  |
+|                        | 'INC17517121',         |        |           |              |      |                  |
+|                        | 'INC17517128',         |        |           |              |      |                  |
+|                        | 'INC17517130',         |        |           |              |      |                  |
+|                        | 'INC17517131',         |        |           |              |      |                  |
+|                        | 'INC17517132',         |        |           |              |      |                  |
+|                        | 'INC17517133',         |        |           |              |      |                  |
+|                        | 'INC17517160',         |        |           |              |      |                  |
+|                        | 'INC17517161',         |        |           |              |      |                  |
+|                        | 'INC17517162',         |        |           |              |      |                  |
+|                        | 'INC17517163',         |        |           |              |      |                  |
+|                        | 'INC17517164',         |        |           |              |      |                  |
+|                        | 'INC17517165',         |        |           |              |      |                  |
+|                        | 'INC17517166',         |        |           |              |      |                  |
+|                        | 'INC17517167',         |        |           |              |      |                  |
+|                        | 'INC17517168',         |        |           |              |      |                  |
+|                        | 'INC17517169',         |        |           |              |      |                  |
+|                        | 'INC17517171',         |        |           |              |      |                  |
+|                        | 'INC17517173',         |        |           |              |      |                  |
+|                        | 'INC17517174',         |        |           |              |      |                  |
+|                        | 'INC17517176',         |        |           |              |      |                  |
+|                        | 'INC17517177',         |        |           |              |      |                  |
+|                        | 'INC17517178',         |        |           |              |      |                  |
+|                        | 'INC17517180',         |        |           |              |      |                  |
+|                        | 'INC17517181',         |        |           |              |      |                  |
+|                        | 'INC17517182',         |        |           |              |      |                  |
+|                        | 'INC17517183',         |        |           |              |      |                  |
+|                        | 'INC17517184',         |        |           |              |      |                  |
+|                        | 'INC17517191',         |        |           |              |      |                  |
+|                        | 'INC17517292']         |        |           |              |      |                  |
+| servicenow.patch_chang | [123]                  | False  | False     | st2kv.system |      |                  |
+| e_created              |                        |        |           |              |      |                  |
+| servicenow.tasks_proce | ['TASK5819423',        | False  | False     | st2kv.system |      |                  |
+| ssing                  | 'TASK5819418',         |        |           |              |      |                  |
+|                        | 'TASK7460729',         |        |           |              |      |                  |
+|                        | 'TASK7460733',         |        |           |              |      |                  |
+|                        | 'TASK5819428',         |        |           |              |      |                  |
+|                        | 'TASK7460730']         |        |           |              |      |                  |
+| sleep_interval         | 300                    | False  | False     | st2kv.system |      |                  |
+| threshold.Win_memory_h | 90                     | False  | False     | st2kv.system |      |                  |
+| igh                    |                        |        |           |              |      |                  |
+| threshold.cpu_high     | 90                     | False  | False     | st2kv.system |      |                  |
+| threshold.disk_high    | 90                     | False  | False     | st2kv.system |      |                  |
+| threshold.disk_mb      | 100                    | False  | False     | st2kv.system |      |                  |
+| threshold.memory_high  | 90                     | False  | False     | st2kv.system |      |                  |
+| threshold.port_high    | 90                     | False  | False     | st2kv.system |      |                  |
+| threshold.uptime_low   | 20                     | False  | False     | st2kv.system |      |                  |
+| threshold_cpu_high     | 90                     | False  | False     | st2kv.system |      |                  |
+| threshold_memory_high  | 90                     | False  | False     | st2kv.system |      |                  |
+| unix_cpu_max_failures  | 4                      | False  | False     | st2kv.system |      |                  |
+| unix_cpu_pending_mins  | 30                     | False  | False     | st2kv.system |      |                  |
+| unix_cpu_recheck_limit | 8                      | False  | False     | st2kv.system |      |                  |
+| unix_high_cpu_rec_days | {'7' : 7,'30' : 15 }   | False  | False     | st2kv.system |      |                  |
+| unix_high_memory_rec_d | {'7' : 15,'30' : 30 }  | False  | False     | st2kv.system |      |                  |
+| ays                    |                        |        |           |              |      |                  |
+| unix_memory_max_failur | 4                      | False  | False     | st2kv.system |      |                  |
+| es                     |                        |        |           |              |      |                  |
+| unix_memory_pending_mi | 30                     | False  | False     | st2kv.system |      |                  |
+| ns                     |                        |        |           |              |      |                  |
+| unix_memory_recheck_li | 8                      | False  | False     | st2kv.system |      |                  |
+| mit                    |                        |        |           |              |      |                  |
+| unix_service_down_rec_ | {'1' : 2 }             | False  | False     | st2kv.system |      |                  |
+| days                   |                        |        |           |              |      |                  |
+| windows_heartbeat_fail | 3                      | False  | False     | st2kv.system |      |                  |
+| ure_ping_recheck_limit |                        |        |           |              |      |                  |
+| windows_heartbeat_fail | 300                    | False  | False     | st2kv.system |      |                  |
+| ure_ping_sleep_interva |                        |        |           |              |      |                  |
+| l                      |                        |        |           |              |      |                  |
+| winrm.password         | 3030303030AE9CEEE33AC0 | True   | True      | st2kv.system |      |                  |
+|                        | 0463B253261CCD308130D6 |        |           |              |      |                  |
+|                        | E2106BD56B398A69455315 |        |           |              |      |                  |
+|                        | 918B84FE0B8E5C7A22A54F |        |           |              |      |                  |
+|                        | F8AF024E29F28904D2DD21 |        |           |              |      |                  |
+|                        | 4212                   |        |           |              |      |                  |
+| winrm.port             | 5985                   | False  | False     | st2kv.system |      |                  |
+| winrm.scheme           | http                   | False  | False     | st2kv.system |      |                  |
+| winrm.ssl              | false                  | False  | False     | st2kv.system |      |                  |
+| winrm.ssl_verify       | false                  | False  | False     | st2kv.system |      |                  |
+| winrm.timeout_sec      | 300                    | False  | False     | st2kv.system |      |                  |
+| winrm.transport        | ntlm                   | False  | False     | st2kv.system |      |                  |
+| winrm.username         | Clarios\ap_svc_dsolcls | False  | False     | st2kv.system |      |                  |
+|                        | a                      |        |           |              |      |                  |
++------------------------+------------------------+--------+-----------+--------------+------+------------------+
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 key get linux.password -d
++------------------+----------------+
+| Property         | Value          |
++------------------+----------------+
+| name             | linux.password |
+| value            | RapidStart01!  |
+| secret           | True           |
+| encrypted        | False          |
+| scope            | st2kv.system   |
+| expire_timestamp |                |
++------------------+----------------+
+[xbhanapdsa@c1040l0065n actions]$ sudo vi read_excel_validate_port.py
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 run ntt_monitoring.read_excel_validate_port ci_name="Test"
+..
+id: 68b043622d1266a8272a31ec
+action.ref: ntt_monitoring.read_excel_validate_port
+context.user: st2admin
+parameters:
+  ci_name: Test
+status: failed
+start_timestamp: Thu, 28 Aug 2025 11:54:10 UTC
+end_timestamp: Thu, 28 Aug 2025 11:54:12 UTC
+result:
+  exit_code: 1
+  result: None
+  stderr: "Traceback (most recent call last):
+  File "/opt/stackstorm/st2/lib/python3.8/site-packages/python_runner/python_action_wrapper.py", line 395, in <module>
+    obj.run()
+  File "/opt/stackstorm/st2/lib/python3.8/site-packages/python_runner/python_action_wrapper.py", line 214, in run
+    output = action.run(**self._parameters)
+  File "/opt/stackstorm/packs/ntt_monitoring/actions/read_excel_validate_port.py", line 105, in run
+    print(f"{row['Linux']}"+":"+val)
+TypeError: can only concatenate str (not "NoneType") to str
+"
+  stdout: 'Authentication failed. Check your username and password.
+    '
+[xbhanapdsa@c1040l0065n actions]$ sudo vi read_excel_validate_port.py
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 run ntt_monitoring.read_excel_validate_port ci_name="Test"
+..
+id: 68b043892d1266a8272a31ef
+action.ref: ntt_monitoring.read_excel_validate_port
+context.user: st2admin
+parameters:
+  ci_name: Test
+status: failed
+start_timestamp: Thu, 28 Aug 2025 11:54:49 UTC
+end_timestamp: Thu, 28 Aug 2025 11:54:51 UTC
+result:
+  exit_code: 1
+  result: None
+  stderr: "Traceback (most recent call last):
+  File "/opt/stackstorm/st2/lib/python3.8/site-packages/python_runner/python_action_wrapper.py", line 395, in <module>
+    obj.run()
+  File "/opt/stackstorm/st2/lib/python3.8/site-packages/python_runner/python_action_wrapper.py", line 214, in run
+    output = action.run(**self._parameters)
+  File "/opt/stackstorm/packs/ntt_monitoring/actions/read_excel_validate_port.py", line 105, in run
+    print(f"{row['Linux']}"+":"+val)
+TypeError: can only concatenate str (not "NoneType") to str
+"
+  stdout: '10.64.64.77
+    Authentication failed. Check your username and password.
+    '
+[xbhanapdsa@c1040l0065n actions]$ sudo vi read_excel_validate_port.py
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 run ntt_monitoring.read_excel_validate_port ci_name="Test"
+..
+id: 68b046952d1266a8272a31f2
+action.ref: ntt_monitoring.read_excel_validate_port
+context.user: st2admin
+parameters:
+  ci_name: Test
+status: failed
+start_timestamp: Thu, 28 Aug 2025 12:07:49 UTC
+end_timestamp: Thu, 28 Aug 2025 12:07:51 UTC
+result:
+  exit_code: 1
+  result: None
+  stderr: "Traceback (most recent call last):
+  File "/opt/stackstorm/st2/lib/python3.8/site-packages/python_runner/python_action_wrapper.py", line 395, in <module>
+    obj.run()
+  File "/opt/stackstorm/st2/lib/python3.8/site-packages/python_runner/python_action_wrapper.py", line 214, in run
+    output = action.run(**self._parameters)
+  File "/opt/stackstorm/packs/ntt_monitoring/actions/read_excel_validate_port.py", line 105, in run
+    print(f"{row['Linux']}"+":"+val)
+TypeError: can only concatenate str (not "NoneType") to str
+"
+  stdout: '10.64.64.77
+    Authentication failed. Check your username and password.
+    '
+[xbhanapdsa@c1040l0065n actions]$ sudo vi read_excel_validate_port.py
+[xbhanapdsa@c1040l0065n actions]$ sudo st2 run ntt_monitoring.read_excel_validate_port ci_name="Test"
+...........................................................................................................................................................................................................................................................................................................
+id: 68b0495f2d1266a8272a31f5
+action.ref: ntt_monitoring.read_excel_validate_port
+context.user: st2admin
+parameters:
+  ci_name: Test
+status: timeout
+start_timestamp: Thu, 28 Aug 2025 12:19:43 UTC
+end_timestamp: Thu, 28 Aug 2025 12:29:43 UTC
+result:
+  error: Action failed to complete in 600 seconds
+  exit_code: -9
+  result: None
+  stderr: ''
+  stdout: '10.64.64.77
+    Authentication failed. Check your username and password.
+    10.64.64.80
+    Authentication failed. Check your username and password.
+    10.64.208.2
+    Authentication failed. Check your username and password.
+    10.64.208.3
+    Authentication failed. Check your username and password.
+    10.64.232.2
+    An error occurred: [Errno 110] Connection timed out
+    10.113.240.117
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.113.240.117
+    10.113.240.105
+    Authentication failed. Check your username and password.
+    10.113.240.102
+    Authentication failed. Check your username and password.
+    10.113.240.101
+    Authentication failed. Check your username and password.
+    10.69.192.92
+    Authentication failed. Check your username and password.
+    10.69.192.117
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.69.192.117
+    10.69.192.123
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.69.192.123
+    10.138.1.204
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.138.1.204
+    10.138.1.205
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.138.1.205
+    10.138.1.91
+    An error occurred: [Errno 110] Connection timed out
+    10.138.1.112
+    Authentication failed. Check your username and password.
+    10.138.1.157
+    Authentication failed. Check your username and password.
+    10.143.160.79
+    Authentication failed. Check your username and password.
+    10.143.160.81
+    Authentication failed. Check your username and password.
+    10.143.160.84
+    Authentication failed. Check your username and password.
+    10.143.160.102
+    Authentication failed. Check your username and password.
+    10.143.160.103
+    Authentication failed. Check your username and password.
+    10.146.128.108
+    Authentication failed. Check your username and password.
+    10.142.48.113
+    Authentication failed. Check your username and password.
+    10.143.32.120
+    Authentication failed. Check your username and password.
+    10.145.64.73
+    Authentication failed. Check your username and password.
+    10.160.176.115
+    Authentication failed. Check your username and password.
+    10.160.160.113
+    Authentication failed. Check your username and password.
+    10.160.160.118
+    Authentication failed. Check your username and password.
+    10.160.160.119
+    Authentication failed. Check your username and password.
+    10.160.160.120
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.160.160.120
+    10.160.240.112
+    Authentication failed. Check your username and password.
+    10.138.1.150
+    Authentication failed. Check your username and password.
+    10.138.0.81
+    Authentication failed. Check your username and password.
+    10.138.0.47
+    Authentication failed. Check your username and password.
+    192.168.1.47
+    An error occurred: [Errno 110] Connection timed out
+    10.138.1.115
+    Authentication failed. Check your username and password.
+    10.138.1.100
+    Authentication failed. Check your username and password.
+    10.138.0.113
+    Authentication failed. Check your username and password.
+    10.138.1.250
+    Authentication failed. Check your username and password.
+    10.138.1.104
+    Authentication failed. Check your username and password.
+    10.138.0.16
+    An error occurred: [Errno None] Unable to connect to port 22 on 10.138.0.16
+    10.143.160.106
+    Authentication failed. Check your username and password.
+    10.143.160.124
+    Authentication failed. Check your username and password.
+    10.146.128.107
+    Authentication failed. Check your username and password.
+    10.146.128.111
+    Authentication failed. Check your username and password.
+    10.143.48.125
+    Authentication failed. Check your username and password.
+    10.143.48.117
+    Authentication failed. Check your username and password.
+    10.142.48.115
+    '
+[xbhanapdsa@c1040l0065n actions]$
